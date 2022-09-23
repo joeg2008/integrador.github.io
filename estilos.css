@@ -1,6 +1,9 @@
 h1{
 
 color: red;
-background-color: burlywood;
+background: burlywood;
+text-align: center;
+height: 2em;
+padding: 5px;
 
 }
