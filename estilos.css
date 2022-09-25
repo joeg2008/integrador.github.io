@@ -1,9 +1,31 @@
-h1{
+.nav-link{
+color: white;
+}
+.navbar-brand{
+color: white;
+}
 
-color: red;
-background: burlywood;
+.row{
+  text-align: center;
+}
+
+#columnaTexto{
+    background-color: grey;
+    text-align: left;
+    color: white;
+    padding: 20px;
+}
+
+footer{
+background-color: grey ;
+position: center;
+bottom: 0px;
+left: auto;
+width: 1140px;
+height: 60px;
 text-align: center;
-height: 2em;
-padding: 5px;
+color: white;
+
+
 
 }
