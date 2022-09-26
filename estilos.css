@@ -5,8 +5,17 @@ color: white;
 color: white;
 }
 
+
+
 .row{
   text-align: center;
+}
+
+.card{
+
+    margin: auto;
+    height: 454px;
+    text-align: left;
 }
 
 #columnaTexto{
@@ -15,9 +24,17 @@ color: white;
     color: white;
     padding: 20px;
 }
+.btn.btn-primary{
+background-color: rgb(24, 158, 40);
+color: white;
+
+}
 
 footer{
-background-color: grey ;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: linear-gradient(to left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
 position: center;
 bottom: 0px;
 left: auto;
