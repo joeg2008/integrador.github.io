@@ -4,6 +4,21 @@ color: white;
 .navbar-brand{
 color: white;
 }
+#tickets{
+    color: green;
+}
+.carousel-caption {
+    
+    right: 50px;
+    left: auto;
+    bottom: 200px;
+    width: 500px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: right;
+  }
 
 
 
