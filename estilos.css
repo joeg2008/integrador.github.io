@@ -5,7 +5,12 @@ color: white;
 color: white;
 }
 #tickets{
-    color: green;
+    color: rgb(33, 222, 33);
+
+}
+#tickets:hover{
+    color: rgb(240, 240, 43);
+
 }
 #row-nav{
     padding-right: 5rem;
