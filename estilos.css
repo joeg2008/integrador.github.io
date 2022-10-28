@@ -87,3 +87,24 @@ footer{
     
    
 }
+
+  /* Estilos Tickets */
+
+  #descCards1{
+    background-color: rgb(233, 242, 237);
+    border: 2px solid rgb(13, 13, 121);
+    margin: 2px;
+    text-align: center;
+}
+#descCards2{
+    background-color: rgb(233, 242, 237);
+    border: 2px solid rgb(9, 192, 73);
+    margin: 2px;
+    text-align: center;
+}
+#descCards3{
+    background-color: rgb(233, 242, 237);
+    border: 2px solid rgb(241, 39, 187);
+    margin: 2px;
+    text-align: center;
+}
