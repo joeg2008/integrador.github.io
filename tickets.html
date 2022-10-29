@@ -56,19 +56,17 @@
       </div>
       </div>
       <br>
-      <br>
 
      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <div class="card text-center border-0"  style="width: 18rem; height: 15rem;">
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <div class="card text-center border-0"  style="width: 18rem; height: 10rem;">
               <div class="card-body" id="descCards1">
                 <span class="badge text-bg-warning">80% OFF</span>
                 <br>
                 <br>
                 <h5 class="card-title"style="color: red">ESTUDIANTE</h5>
-                <br>
-               <h6>Tienen un Descuento del</h6>
+                <h6>Tienen un Descuento del</h6>
                <h5 class="card-title">80%</h5>
                <br>
                 <p class="card-text">*presentar documentacion</p>
@@ -76,30 +74,28 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
-          <div class="card text-center border-0"  style="width: 18rem; height: 15rem;">
+          <div class="col-3">
+          <div class="card text-center border-0"  style="width: 18rem; height: 10rem;">
             <div class="card-body" id="descCards2">
               <span class="badge text-bg-warning">50% OFF</span>
               <br>
               <br>
               <h5 class="card-title"style="color: red">TRAINEE</h5>
-              <br>
-             <h6>Tienen un Descuento del</h6>
+              <h6>Tienen un Descuento del</h6>
              <h5 class="card-title">50%</h5>
              <br>
               <p class="card-text">*presentar documentacion</p>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card text-center border-0"  style="border: 0px solid; width: 18rem; height: 15rem;">
+          <div class="col-3">
+            <div class="card text-center border-0"  style="border: 0px solid; width: 18rem; height: 10rem;">
               <div class="card-body" id="descCards3">
                 <span class="badge text-bg-warning">15% OFF</span>
                 <br>
                 <br>
                 <h5 class="card-title"style="color: red">JUNIOR</h5>
-                <br>
-               <h6>Tienen un Descuento del</h6>
+                <h6>Tienen un Descuento del</h6>
                <h5 class="card-title">15%</h5>
                <br>
                 <p class="card-text">*presentar documentacion</p>
@@ -108,21 +104,19 @@
           </div>
         </div>
       </div>
-
+<br>
 <br>
 <br>
 <div class="container">
     <div class="row">
       <div class="col">
     <p > VENTA</p>
-    <H2>VALOR DEL TICKET $200</H2>
+    <H3>VALOR DEL TICKET $200</H3>
   </div>
   </div>
   </div>
-  <br>
-  <br>
-
-     <div class="container"> <!--Inicio Formulario-->
+  
+  <div class="container"> <!--Inicio Formulario-->
         <form class="row g-3 justify-content-center">
             <div class="col-md-5">
                 <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
@@ -135,25 +129,29 @@
             </div>
             <div class="col-5">
               <label for="Cantidad" class="form-label">Cantidad</label>
-              <input type="text" class="form-control" id="cantidad" placeholder="1">
+              <input type="text" oninput="calcular()" class="form-control" id="canti" placeholder="0">
             </div>
             <div class="col-md-5">
               <label for="inputCategoria" class="form-label">Categoria</label>
-              <select id="inputCategoria" class="form-select">
-                <option selected>Elija Categoria</option>
+              <select id="inputCategoria" class="form-select" oninput="calcular()">                
+                <option value="0">Sin Descuento</option>
                 <option value="1">Estudiante</option>
                 <option value="2">Trainee</option>
                 <option value="3">Junior</option>
               </select>
             </div>
-            <div class="col-md-10">
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Total a Pagar: $ ">
+            <div class="col-10 alert alert-info" role="alert" id=totales>
+                Total a Pagar: $ 
               </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
+            <div class="d-grid gap-2 col-4 mx-auto">
+              <button onclick="borrar()" type="button" class="btn btn-primary" >Borrar</button>
             </div>
+            <div class="d-grid gap-2 col-4 mx-auto">
+                <button type="submit" class="btn btn-primary">Check-Out</button>
+              </div>
           </form>
     </div>
+    <br>
 
 
 
