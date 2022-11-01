@@ -108,3 +108,8 @@ footer{
     margin: 2px;
     text-align: center;
 }
+#totalRes{
+
+    background-color: rgb(107, 16, 16);
+    color: white;
+}

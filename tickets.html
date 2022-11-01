@@ -119,13 +119,13 @@
   <div class="container"> <!--Inicio Formulario-->
         <form class="row g-3 justify-content-center">
             <div class="col-md-5">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                <input type="text"  class="form-control" id="nomb" placeholder="Nombre" aria-label="First name">
             </div>
             <div class="col-md-5">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                <input type="text"  class="form-control" id="apell" placeholder="Apellido" aria-label="Last name">
             </div>
             <div class="col-10">
-                <input type="email" class="form-control" placeholder="E-mail" id="inputEmail4">
+                <input type="email" oninput="asignar()" class="form-control" id="correo" placeholder="E-mail" id="inputEmail4">
             </div>
             <div class="col-5">
               <label for="Cantidad" class="form-label">Cantidad</label>
@@ -147,11 +147,43 @@
               <button onclick="borrar()" type="button" class="btn btn-primary" >Borrar</button>
             </div>
             <div class="d-grid gap-2 col-4 mx-auto">
-                <button type="submit" class="btn btn-primary">Check-Out</button>
+                <button onclick="resumen()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="check">Check-Out</button>
               </div>
           </form>
     </div>
     <br>
+   
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Resumen de Compra</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="col-10 alert alert-info" role="alert" id=comprador>
+                Datos del Comprador:
+              </div>
+              <div class="col-10 alert alert-info" role="alert" id=compMail>
+                E-mail:
+              </div>
+              <div class="col-10 alert alert-info" role="alert" id=cantick>
+                Cantidad de Tickets:
+              </div>
+              <div class="col-10 alert alert-info" role="alert" id=descuento>
+                Descuento aplicado:
+              </div>
+              <div class="col-10 alert alert-info" role="alert" id=totalRes>
+                Total a Pagar: $ 
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           </div>
+      </div>
+    </div>
+  </div>
 
 
 
